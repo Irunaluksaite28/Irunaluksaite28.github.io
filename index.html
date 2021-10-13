@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My Website</title>
+<style>
+    /* adding padding */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+	html {
+  font: 300 100%/1.5 Ubuntu, sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+		p, h1{
+		padding: 0px 10px 0px 10px
+}
+
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }    
+    /* adding colors and padding */
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    .container p{
+        line-height: 200px; /* creating a scroll bar */
+    }
+
+	#gallery {
+   line-height:0;
+   -webkit-column-count:5; 
+   -webkit-column-gap:5px; 
+   -moz-column-count:5;
+   -moz-column-gap:5px;
+   column-count:5;
+   column-gap:5px;
+}
+
+#gallery img {
+   width: 100% !important;
+   height: auto !important;
+   margin-bottom:5px; 
+}
+@media (max-width: 1200px) {
+   #gallery {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+   }
+}
+@media (max-width: 1000px) {
+   #gallery {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+   }
+}
+@media (max-width: 800px) {
+   #gallery {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+   }
+}
+@media (max-width: 400px) {
+   #gallery {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+   }
+}
+
+</style>
+</head>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="index.html">Introduction</a>
+                <a href="places.html">Places I visited</a>
+                <a href="mustsee.html">Must See</a>
+                <a href="contact.html">Contact me</a>
+                
+            </nav>
+        </div>
+    </div>
+	<h1>My trip to Milan</h1>
+	<hr>
+	<p> Hello, my name is Irūna, and this is my website about my trip to Milan. I will share my thoughts and opinions about Milan and I will recommend some places I visited. Here are some moments in Milan!
+	</p>
+    <div class="container">
+    <div id="gallery">
+  
+   <img src="1.jpg">
+   <img src="2.jpg">
+   <img src="3.jpg">
+   <img src="4.jpg">
+   <img src="5.jpg">
+   <img src="6.jpg">
+   <img src="7.jpg">
+   <img src="8.jpg">
+   <img src="9.jpg">
+   <img src="10.jpg">
+   <img src="11.jpg">
+   <img src="12.jpg">
+	<img src="13.jpg">
+	<img src="duomo2.jpg">
+  
+  </div>
+
+    </div>    
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2021 Irūna Lukšaitė</div>        
+    </div>
+</body>
+</html>
